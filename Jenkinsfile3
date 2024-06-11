@@ -5,7 +5,7 @@ stage('usernamePassword') {
 steps {
 script {
 withCredentials([
-usernamePassword(credentialsId: 'ramkuumar',
+usernamePassword(credentialsId: 'kumar238',
 usernameVariable: 'username',
 passwordVariable: 'password')
 ]) {
