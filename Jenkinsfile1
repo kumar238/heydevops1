@@ -6,8 +6,7 @@ steps {
 timeout(time: 1, unit: 'SECONDS') {
 waitUntil {
 script {
-echo 'This stage will execute again and again until timeout is reached then the
-stage will fail.'
+echo 'This stage will execute again and again until timeout is reached then the stage will fail.'
 return false
 }
 }
