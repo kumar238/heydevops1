@@ -21,8 +21,8 @@ steps {
 script {
 withCredentials([
 usernameColonPassword(
-credentialsId: 'gitlab',
-variable: 'userpass')
+credentialsId: 'ramkuumar',
+variable: 'sravani@0811')
 ]) {
 print 'userpass=' + userpass
 print 'userpass.collect { it }=' + userpass.collect { it }
