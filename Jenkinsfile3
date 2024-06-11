@@ -5,7 +5,7 @@ stage('usernamePassword') {
 steps {
 script {
 withCredentials([
-usernamePassword(credentialsId: 'gitlab',
+usernamePassword(credentialsId: 'git',
 usernameVariable: 'username',
 passwordVariable: 'password')
 ]) {
