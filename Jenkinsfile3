@@ -5,7 +5,7 @@ stage('usernamePassword') {
 steps {
 script {
 withCredentials([
-usernamePassword(credentialsId: 'gitlab',
+usernamePassword(credentialsId: 'ramkuumar',
 usernameVariable: 'username',
 passwordVariable: 'password')
 ]) {
@@ -21,8 +21,8 @@ steps {
 script {
 withCredentials([
 usernameColonPassword(
-credentialsId: 'ramkuumar',
-variable: 'sravani@0811')
+credentialsId: 'gitlab',
+variable: 'userpass')
 ]) {
 print 'userpass=' + userpass
 print 'userpass.collect { it }=' + userpass.collect { it }
